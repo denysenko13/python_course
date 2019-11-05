@@ -1,8 +1,8 @@
 from random import randint, uniform
 
-x = randint(1,100)
-y = uniform(1,100)
+rand_int = randint(1,100)
+rand_float = uniform(1,100)
 
-print('Integer number:', x)
-print('Float number:', y)
-print('Is int number bigger than float number?', x > y)
+print('Integer number:', rand_int)
+print('Float number:', rand_float)
+print('Is int number bigger than float number?', rand_int > rand_float)
