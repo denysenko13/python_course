@@ -1,0 +1,2 @@
+text = 'VZoFPzGvXwtbR+guMLszPhfvZotHwDm-emryhEXAaBW+-AbMdmEK+ztGDWyIzSFvjaFrHLzhoRqgsQraUdnSBGykFWNLOxTVKM+ynHqsVrQGEiqdKULoDVZcsZ-BpTWkDVR+jSgrfQZhUAdWCxtwOmTBQo+qWOlYyvGxnNpZFlTSrmaesQOotBLnVw!gOUrhz+F-DctdKWvTGhMUopoSPyFAXdJnY+DGFZQbOVgzaqsGvWjtBrJjBWhAFgryaTtwginpEsWtAuOxbgI-ZVunVAIuklBqTlSGUnevwEMqayHKF+sebTCtWcnhzUelA+iM+ivKleqrjoLsmrtHZOGfnHOWXYJpDwU!'
+print('Decrypted text:', text[10::11])
