@@ -7,13 +7,16 @@
 import string, random
 
 num = input("Enter some number: ")
-digits_list = tuple(string.digits)
+#digits_list = tuple(string.digits)
 
 # if num in digits_list:
 #     print("yes")
 # else: 
 #     print("no")
-print(num)
-print(digits_list)
-if num in digits_list:
-    print("ha")
+#print(num)
+#print(digits_list)
+if num.isdigit():
+    print("Number is entered, sqrt:",pow(int(num),2))
+else:
+    num = random.randint(1,100)
+    print("Number is generated, sqrt:",pow(int(num),2))

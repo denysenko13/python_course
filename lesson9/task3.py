@@ -10,7 +10,6 @@ Harry Potter;930.93 USD;2018-08-20 18:08:20;out;
 """
 
 persons_file = "persons_lesson9.txt"
-persons_dict = dict()
 dictionaries_list = list()
 
 with open(persons_file) as file:
