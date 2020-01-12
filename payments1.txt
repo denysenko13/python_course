@@ -1,0 +1,11 @@
+Remus Lupin;329.76 EUR;2018-08-20 19:36:32;out;
+Severus Snape;397 EUR;2018-08-20 20:22:26;out;
+Ron Weasley;929.93 USD;2018-08-20 19:33:58;out;
+Sirius Black;573.58 USD;2018-08-20 06:47:05
+Harry Potter;930.93 USD;2018-08-20 18:08:20;out;
+Rachel Green;102.85 EUR;2018-08-20 15:12:33;out;
+Rachel Green;951.79 USD;2018-08-20 12:33:16;out;
+Lucius Malfoy;482.13 USD;2018-08-20 21:08:27;in;
+Ginny Weasley;658.85 USD;2018-08-2
+Chandler Bing;254 USD;2018-08-20 23:07:26;out;
+Phoebe Buffay;767.04 USD;2018-08-20 13:32:20;out;
