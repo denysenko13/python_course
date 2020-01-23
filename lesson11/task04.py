@@ -7,19 +7,21 @@
 https://docs.python.org/3/library/functions.html#sorted, https://docs.python.org/3/library/stdtypes.html#list.sort
 """
 
+import string
+
+WHITESPACES_LiST = list(string.whitespace)
+PUNCTUATIONS_LIST = list(string.punctuation)
 zen_file = "python_zen.txt"
 words = list()
 
 with open(zen_file) as file:
     for line in file:
         words += (line.split(" "))
-strips = ["\n", "--", ".", ",", "*"]
+strips = WHITESPACES_LiST + PUNCTUATIONS_LIST
 for i in strips:
     words = [word.strip(i) for word in words]
 
 words = [word for word in words if word != ""]
 words.sort(key=len)
 print(words)
-# for i in range(len(words)):
-#     words[i] = words[i].strip("\n")
 

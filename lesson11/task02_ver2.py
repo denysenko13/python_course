@@ -33,7 +33,7 @@ for i in dictionaries_list:
 max_sum = 0
 for k, v in payments_dict.items():
     if max(v) > max_sum:
-        max_sum = sum(v)
+        max_sum = max(v)
     print(k, "Count of amount:", len(v))
 
 print("Max sum:", max_sum)
