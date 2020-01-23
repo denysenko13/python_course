@@ -15,7 +15,6 @@ PAYMENTS_FILE = "payments.txt"
 def create_list(file=PAYMENTS_FILE):
     dictionaries_list = list()
     persons_dict = dict()
-    payments_dict = dict()
     
     with open(file) as f:
         for line in f:

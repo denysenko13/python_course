@@ -84,5 +84,3 @@ else:
 
 print(letters_count(create_letters_list(words)))
 print(letters_in_words(create_letters_list(words), words))
-# for k, v in letters_in_words(create_letters_list(words), words).items():
-#     print(k, v)
