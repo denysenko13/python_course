@@ -13,8 +13,11 @@ rcesar = {}
 orig = 'hello'
 encrypted = ''
 decrypted = ''
-for i in range(len(orig)):
-    encrypted += cesar.get(orig[i])
+# for i in range(len(orig)):
+#     encrypted += cesar.get(orig[i])
+for letter in orig: 
+    encrypted += cesar.get(letter, letter)
+
 
 # тут можно было сформировать 2 листа с помощью values(), keys()
 for key, value in cesar.items():

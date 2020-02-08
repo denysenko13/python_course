@@ -9,17 +9,23 @@ https://docs.python.org/3/library/functions.html#sorted, https://docs.python.org
 
 import string
 
-WHITESPACES_LiST = list(string.whitespace)
-PUNCTUATIONS_LIST = list(string.punctuation)
+# WHITESPACES_LiST = list(string.whitespace)
+# PUNCTUATIONS_LIST = list(string.punctuation)
+WHITESPACES = string.whitespace
+PUNCTUATIONS = string.punctuation
+
+
 zen_file = "python_zen.txt"
 words = list()
 
 with open(zen_file) as file:
     for line in file:
         words += (line.split(" "))
-strips = WHITESPACES_LiST + PUNCTUATIONS_LIST
-for i in strips:
-    words = [word.strip(i) for word in words]
+# strips = WHITESPACES_LiST + PUNCTUATIONS_LIST
+# for i in strips:
+#     words = [word.strip(i) for word in words]
+strips_str = WHITESPACES + PUNCTUATIONS
+words = [word.strip(strips_str) for word in words]
 
 words = [word for word in words if word != ""]
 words.sort(key=len)
