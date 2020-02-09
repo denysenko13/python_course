@@ -21,10 +21,13 @@ def verify_file(file_name):
 
 def calc_words():
     verify_file(filename)
-    words = list()
+    # words = list()
+    # with open(filename) as f:
+    #     for line in f:
+    #         words += (line.split(" "))
+    #         # words.append(line.split(" "))
+    # return len(words)
     with open(filename) as f:
-        for line in f:
-            words += (line.split(" "))
-    return len(words)
+        return len(f.read().split())
 
 print(calc_words())

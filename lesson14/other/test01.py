@@ -23,15 +23,11 @@ def get_presentation():
     while need_continue:
         try:
             pres = getattr(__builtins__, input("Enter hex, bin or oct: "))
-        # except NameError as e:
-        #     print(e)
-        except TypeError as e:
+        except AttributeError as e:
             print(e)
-        # except AttributeError as e:
-        #     print(e)
         else:
             need_continue = False
-    return getattr(__builtins__, pres)
+    return pres
 
 number = get_number()
 presentation = get_presentation()
