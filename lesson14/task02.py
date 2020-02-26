@@ -10,24 +10,19 @@ from random import randint
 
 SECRET = randint(1, 20)
 
-# class ValueTooBig(ValueError):
-#     '''raise it when input number is too big'''
-#     pass
-# class ValueTooSmall(ValueError):
-#     '''raise it when input number is too small'''
-#     pass
+class ValueTooBig(ValueError):
+    '''raise it when input number is too big'''
+    pass
+class ValueTooSmall(ValueError):
+    '''raise it when input number is too small'''
+    pass
 
-"""
-сделал исключения через класс Error, 
-потому что через ValueError программа по логике отрабатывала корректно,
-но не печатался текст ошибки, а выводилась просто пустая строка.
-"""
-class Error(Exception):
-    pass
-class ValueTooBig(Error):
-    pass
-class ValueTooSmall(Error):
-    pass
+# class Error(Exception):
+#     pass
+# class ValueTooBig(Error):
+#     pass
+# class ValueTooSmall(Error):
+#     pass
 
 def game():
     need_continue = True
@@ -35,15 +30,15 @@ def game():
         try:
             num = int(input("Enter number: "))
             if num > SECRET:
-                raise ValueTooBig
+                raise ValueTooBig("Your number is more than secret")
             elif num < SECRET:
-                raise ValueTooSmall
+                raise ValueTooSmall("Your number is less than secret")
         except ValueError as e:
             print(e)
-        except ValueTooBig:
-            print("Your number is more than secret")
-        except ValueTooSmall:
-            print("Your number is less than secret")
+        except ValueTooBig as e:
+            print(e)
+        except ValueTooSmall as e:
+            print(e)
         else:
             if num == SECRET:
                 need_continue = False
